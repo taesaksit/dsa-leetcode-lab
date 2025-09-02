@@ -11,6 +11,19 @@ class Solution:
         return
     
     def createHead(self, arr) :
-        # implement in evening
-        return 
-        
+        head = ListNode(arr[0])
+        curr = head
+        for i in  arr[1:] :
+            curr.next = ListNode(i)
+            curr = curr.next
+        return  head
+    
+    
+input = [1,2,6,3,4,5,6]
+sol = Solution()
+head = sol.createHead(input)
+
+curr = head
+while curr :
+    print(curr.val)
+    curr = curr.next
