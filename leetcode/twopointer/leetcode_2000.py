@@ -15,9 +15,10 @@ class Solution:
              left +=1
              right -=1
         
-        return s
+        return "".join(s)
         
 word = "abcdefd"
 ch = "d"
 sol = Solution()
-sol.reversePrefix(word, ch)
+result = sol.reversePrefix(word, ch)
+print(result)
